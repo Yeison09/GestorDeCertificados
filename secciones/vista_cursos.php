@@ -12,7 +12,7 @@
       <div class="card">
             <div class="card-header">Cursos</div>
             <div class="card-body">
-            <div class="mb-3">
+            <div class="mb-3 d-none"> <!--d-none es para que no se vea el id, pero si se envia-->
                  <label for="" class="form-label">ID</label>
                  <input type="text" 
                         class="form-control" 

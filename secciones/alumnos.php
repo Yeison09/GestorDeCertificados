@@ -18,7 +18,7 @@ $cursos=isset($_POST['cursos'])?$_POST['cursos']:'';
 $accion=isset($_POST['accion'])?$_POST['accion']:'';
 
 
-print_r($_POST['accion']);
+//print_r($_POST['accion']);
 
 if($accion!=""){
     switch($accion){

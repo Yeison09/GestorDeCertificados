@@ -6,7 +6,6 @@
 include_once '../configuraciones/bd.php'; // Estoy es para traer la base de datos
 $conexionBD=BD::crearInstancia();
 
-print_r($_POST);
 
 /**Esta informacion es para recibir los datos del formulario de cursos, basicamente creamos una variable id y el metodo post para recibir y el otro id
  se observa que se esta recibiendo la informacion, entonces la asignamos a la variable id
@@ -52,7 +51,7 @@ if($accion!=''){
             $consulta->execute();
             $curso=$consulta->fetch(PDO::FETCH_ASSOC);
             $nombre_curso=$curso['nombre_curso'];
-            echo $nombre_curso;
+            //echo $nombre_curso;
         break;
     }
     

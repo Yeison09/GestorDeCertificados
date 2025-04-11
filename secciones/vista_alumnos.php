@@ -1,6 +1,7 @@
 <?php include('../templates/cabecera.php'); ?>   
 <?php include('../secciones/alumnos.php'); ?>    
 
+<br>
  
 <div class="row">
     <div class="col-5">
@@ -10,9 +11,10 @@
                 <div class="card-header">
                     Alumnos
                 </div>
+
                 <div class="card-body">
 
-                  <div class="mb-3">
+                  <div class="mb-3 d-none">
                     <label for="id" class="form-label">ID</label>
                     <input type="text" 
                     class="form-control" name="id" id="id" value="<?php echo $id;?>" aria-describedby="helpId" placeholder="ID"/>
@@ -100,7 +102,8 @@
                         <?php echo $alumno['nombre'];?> <?php echo $alumno['apellidos'];?>
                            <br/>
                            <?php foreach($alumno["cursos"] as $curso){ ?> 
-                                - <a href="certificado.php?idcurso=<?php echo $curso['id'];?>&idalumno=<?php echo $alumno["id"];?>">    <?php echo $curso['nombre_curso'];?> </a> </a><br/>
+                                - <a href="certificado.php?idcurso=<?php echo $curso['id'];?>&idalumno=<?php echo $alumno["id"];?>">    
+                                <i class="bi bi-filetype-pdf text-danger"></i><?php echo $curso['nombre_curso'];?> </a> </a><br/>
                             <?php } ?>
                         
                         </td>
