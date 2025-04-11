@@ -62,12 +62,13 @@ if($_POST){
                     <div class="card-header">Inicio de sesion</div>
 
                  <div class="card-body">
-                    <?php if(isset($mensaje))
-                    {
-                        echo $mensaje;
-                    }
+                    <?php if(isset($mensaje)) {?>
+                        <div class="alert alert-danger" role="alert">
+                            <?php echo $mensaje; ?>
+                        </div>
+                    <?php } ?>
                     
-                    ?>
+            
                     <div class="mb-3">
                         <label for="" class="form-label">Usuario</label>
                         <input type="text"

@@ -25,7 +25,7 @@
                     <a class="nav-item nav-link active" href="../index.php" aria-current="page">Inicio</a>
                     <a class="nav-item nav-link" href="vista_alumnos.php">Alumnos</a>
                     <a class="nav-item nav-link" href="vista_cursos.php">Cursos</a>
-                    <a class="nav-item nav-link" href="../configuraciones/bd.php">Cerrar sesion</a>
+                    <a class="nav-item nav-link" href="cerrar.php">Cerrar sesion</a>
                 </div>
      </nav>
 
